@@ -72,7 +72,10 @@ import vuetifyjs from '/public/svg/skills/vuetifyjs.svg';
 import webix from '/public/svg/skills/webix.svg';
 import wolframalpha from '/public/svg/skills/wolframalpha.svg';
 import wordpress from '/public/svg/skills/wordpress.svg';
-
+import fastapi from '/public/svg/skills/fastapi.svg';
+import rag from '/public/svg/skills/rag.svg';
+import genai from '/public/svg/skills/genai.svg';
+import vectordb from '/public/svg/skills/vectordb.svg';
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
@@ -124,6 +127,8 @@ export const skillsImage = (skill) => {
     case 'mysql':
       return mysql;
     case 'postgresql':
+    case 'postgresql':
+    case 'postgresql':
       return postgresql;
     case 'tailwind':
       return tailwind;
@@ -165,6 +170,14 @@ export const skillsImage = (skill) => {
       return deno;
     case 'django':
       return django;
+    case 'fastapi':
+      return fastapi;
+    case 'rag':
+      return rag;
+    case 'genai':
+      return genai;
+    case 'vector db':
+      return vectordb;
     case 'firebase':
       return firebase;
     case 'gimp':

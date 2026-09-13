@@ -13,22 +13,22 @@ function AboutSection() {
         </span>
         <span className="h-36 w-[2px] bg-[#1a1443]"></span>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-        <div className="order-2 lg:order-1">
-          <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="order-2 lg:order-1 lg:col-span-7 flex flex-col justify-center">
+          <p className="font-semibold mb-4 text-[#16f2b3] text-2xl lg:text-3xl uppercase tracking-wider">
             Who I am?
           </p>
-          <p className="text-gray-200 text-sm lg:text-lg">
+          <p className="text-gray-200 text-base sm:text-lg lg:text-xl leading-relaxed font-light">
             {personalData.description}
           </p>
         </div>
-        <div className="flex justify-center order-1 lg:order-2">
+        <div className="flex justify-center order-1 lg:order-2 lg:col-span-5">
           <Image
             src={personalData.profile}
-            width={280}
-            height={280}
+            width={380}
+            height={380}
             alt="Divyanshu Kaushal"
-            className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
+            className="rounded-xl transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-105 cursor-pointer shadow-2xl border border-indigo-500/20 object-cover w-full max-w-[360px] h-[360px]"
           />
         </div>
       </div>
